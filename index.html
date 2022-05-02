@@ -19,7 +19,7 @@
           <div class="col-12" id="wrapMode">
             <i id="mode"></i>
           </div>
-            <img src="{{ url_for(filename='tiktok.svg')}}" id="logo">
+            <img src="/static/tiktok.svg" id="logo">
             <input type="text" class="form-control" placeholder="Tiktok Url" id="tiktokurl">
             <button class="btn btn-outline-primary my-1" id="submitter">Download</button>
         </div>
@@ -32,7 +32,7 @@
     </footer>
     <div class="modal"><!-- Place at bottom of page --></div>
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js" integrity="sha384-MrcW6ZMFYlzcLA8Nl+NtUVF0sA7MsXsP1UyJoMp4YLEuNSfAP+JcXn/tWtIaxVXM" crossorigin="anonymous"></script>
-    <script src="{{ url_for('static', filename='script.js')}}"></script>
+    <script src="/static/script.js"></script>
     <style>
       /* Start by setting display:none to make this hidden.
       Then we position it in relation to the viewport window
@@ -48,7 +48,7 @@
         height:     100%;
         width:      100%;
         background: rgba( 255, 255, 255, .8 ) 
-                    url("{{ url_for('static', filename='loading.svg')}}") 
+                    url("/static/loading.svg") 
                     50% 50% 
                     no-repeat;
     }
